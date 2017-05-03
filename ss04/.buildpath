@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="src" path="plugins/ckeditor/samples/old"/>
+	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+	<buildpathentry kind="src" path="plugins/datatables/extensions/Scroller/examples/data"/>
+	<buildpathentry kind="lib" path="AdminLTE2.zip"/>
+</buildpath>

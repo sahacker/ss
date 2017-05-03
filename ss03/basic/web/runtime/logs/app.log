@@ -1,0 +1,55 @@
+2016-03-08 22:18:20 [192.168.137.240][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "".' in /var/www/html/ss03/basic/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /var/www/html/ss03/basic/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#1 /var/www/html/ss03/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/ss03/basic/web/index.php(12): yii\base\Application->run()
+#3 /var/www/html/ss03/basic/index.php(2): include_once('/var/www/html/s...')
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/ss03/basic/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/ss03/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/ss03/basic/web/index.php(12): yii\base\Application->run()
+#2 /var/www/html/ss03/basic/index.php(2): include_once('/var/www/html/s...')
+#3 {main}
+2016-03-08 22:18:20 [192.168.137.240][-][-][info][application] $_COOKIE = [
+    '_csrf' => '154964ede021324a755db88fa5323bdaa6372184e71d278dc7c82755dfba5ed1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"BdRmg0dRzllDvPVt4wDH9qBMYV-ystsG\";}'
+    'PHPSESSID' => 'bnmja503tilvtr8u645v1f4u11'
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/var/www/html/ss03/basic/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/var/www/html/ss03/basic'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.9.3'
+    'REMOTE_ADDR' => '192.168.137.240'
+    'REMOTE_PORT' => '55707'
+    'SERVER_ADDR' => '192.168.137.14'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'ss03'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'ss03'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36 OPR/35.0.2066.92'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, lzma, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=154964ede021324a755db88fa5323bdaa6372184e71d278dc7c82755dfba5ed1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22BdRmg0dRzllDvPVt4wDH9qBMYV-ystsG%22%3B%7D; PHPSESSID=bnmja503tilvtr8u645v1f4u11'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1457475500.179
+    'REQUEST_TIME' => 1457475500
+]

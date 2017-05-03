@@ -1,0 +1,53 @@
+<?php
+$conn = @mysqli_connect ($host, $user, $password, $db);
+//if (!$conn) { mysqli_close($conn); echo 'Not connect with DB!';
+// header('location: index.php?act=error');
+//}
+
+function  LMsg($lang, $tkey) {
+	global $host, $user, $password, $db, $conn;
+	//	$conn = mysqli_connect($host, $user, $password, $db);
+	if (!$conn) { mysqli_close($conn); echo 'Not connect with DB!'; } else {
+		$query = 'select msg from msgstr where lang="'.$lang.'" and typekey="'.$tkey.'"';
+		$result = mysqli_query($conn, $query);
+		$rowcnt = mysqli_num_rows($result);
+		if ($rowcnt == 0) {
+			//			mysqli_close($conn);
+			echo 'No such string!'; } else {
+				$row = mysqli_fetch_assoc($result);
+				$msg = $row['msg'];
+				//		mysqli_close($conn);
+				return $msg; }; };
+}
+
+
+$sshead0 = <<<SSHEAD0
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+SSHEAD0;
+
+$sshead1 = <<<SSHEAD1
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap/css/languages.min.css">
+<link rel="stylesheet" href="font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+<link rel="stylesheet" href="dist/css/skins/_all-skins.min.css"></head>
+SSHEAD1;
+
+$sstail = <<<SSTAIL
+<script src="ss.js"></script>
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="plugins/iCheck/icheck.min.js"></script><script>
+$(function () {
+("input").iCheck({
+		checkboxClass: "icheckbox_square-blue",
+		radioClass: "iradio_square-blue",
+		increaseArea: "20%" // optional
+		});
+	});
+</script></body></html>
+SSTAIL;
+
+?>
