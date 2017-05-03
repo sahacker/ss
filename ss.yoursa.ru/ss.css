@@ -1,0 +1,199 @@
+@CHARSET "UTF-8";
+
+.page_bg {
+	background: #494349;	
+	}
+	
+ .main_layer {
+    width: 960px; 
+    padding: 10px; 
+    margin: auto;
+    background: #ffffff;
+	}
+.pgheader {
+    background: #ffffff;
+    height: 60px;
+    width: auto;
+    padding: 0px;
+	}
+	
+.logo {
+    background: #ffffff;
+    height: 60px;
+    width: 56px;
+    padding: 0px;
+    background-image: url("img/logo.png");
+    display: table-cell;
+    float: left; 	
+	}
+.ssname { 
+    background: #ffffff;
+    height: 34px;
+    width: auto;
+    padding: 0px;	 
+    margin-top: 2px;
+    display: table-cell;
+    float: left; 
+    font: 36pt bold tahoma; 
+    text-align: left; 
+    padding-left: 10px;
+	} 
+.login { 
+    background: #ffffff;
+    height: 30px;
+    width: 200px;
+    padding: 0px;
+    padding-top: 30px;    
+    padding-right: 10px; 
+    font: 14pt tahoma; 
+    text-align: right;
+    display: table-cell;
+    float: right; 
+   }
+   
+.menu {
+    background: #2E2E2E none repeat scroll 0px 0px;
+    height: 33px;
+    margin: 15px auto;
+    position: relative;
+    width: 100%;
+}
+ul.menu, ul.menu li, ul.menu ul {
+    list-style: outside none none;
+    margin: 0px;
+    padding: 0px;
+}
+ul.menu {
+    font-family: "Open Sans",sans-serif;
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 0;
+    text-transform: uppercase;
+    word-spacing: 0.1em;
+}
+
+.pgfooter {
+    border-top: 1px outset #2E2E2E;
+    color: #2E2E2E;
+    font-size: 0.8em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    bottom: 0px;
+    margin: 0px auto;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+a:link, a:visited { color: #0199AE; }
+
+.main {
+	background: #ffffff;
+    margin-top: 5px;
+    position: relative;
+    padding: 4px; 
+    width: 960px; 
+    height: 450px;       
+}
+
+.leftrec { 	
+    width: 300px;
+    height: 430px;  
+    background: #ffffff;
+    position: relative;
+    padding: 4px;
+    float: left;
+    margin: 5px;
+	border: solid 1px #d7dcdd;    
+	border-radius: 5px;		
+    display: inline-block; 
+   }
+
+.workfrm {
+    background: #ffffff;
+	width: 630px;
+    position: relative; 
+    padding: 4px;
+    display: inline-block; 	
+	font: 600 13px Sans-serif;	   
+    min-width: 320px;
+    display: none;    
+	}
+
+.g-recaptcha {
+	margin-top: 10px;
+}
+
+fieldset, p { margin: 0; padding: 0; }
+fieldset { border: none; }
+fieldset.info p { margin-bottom: 10px; }
+fieldset.xlogin p { margin-bottom: 0px; }
+p, label, input, legend { font: 600 13px Sans-serif; }
+fieldset.captcha legend { margin: 5px 0 12px 0; padding: 0; }	
+fieldset.button input { border: none; }
+input[type="image"] { margin: 0px; }
+/* input[type="image"] { margin: 10px auto 5px 8%; } */
+fieldset.rules { background: #fbffc2; width: 305px; margin: 0px; }
+
+fieldset.form {
+	margin: 0;
+	padding: 10px 20px 0px 10px; 
+	border: solid 1px #d7dcdd;
+	border-radius: 5px;
+    height: 429px;  
+	}
+		
+label {
+	width: 80px;
+	display: block;
+	padding: 5px 0;
+	float: left;
+	clear: left;
+	}
+
+fieldset.form input {
+	width: 210px;	
+	margin-right: 5px;
+	padding: 3px;
+	border: solid 1px #c1c1c1;				
+	}
+fieldset.rules input {
+	width: 14px;
+	margin-top: 20px;	
+	margin-bottom: 7px;				
+	}
+fieldset.rules label {
+	width: 274px;	
+	margin-right: 0px;
+	padding: 2px;				
+	}
+fieldset.button {
+	margin: 0px;
+	padding: 0px;
+	padding-left: 42px;
+	background: #ffffff;
+	}
+.pass0 { 
+    margin-left: 80px;
+    margin-bottom: 5px;
+    background-image: url("img/pw0.jpg");
+    width: 218px; 
+    height: 25px;
+    position: relative;
+   }
+.mx0 { 
+	margin-left: 80px;
+	margin-bottom: 5px;
+	width: 218px; 
+	height: 5px;
+    position: relative;
+   }
+.stub1 {
+	width: 305px;
+	height: 41px;
+	padding: 25px 2px 2px 2px;
+	background: #ffffff;
+}
